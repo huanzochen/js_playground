@@ -1,1 +1,6 @@
+# modules
 node_modules
+
+# dependencies files 
+package-lock.json
+yarn-error.log
