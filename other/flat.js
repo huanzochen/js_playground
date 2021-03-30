@@ -1,13 +1,13 @@
 
 
-var arr1 = [1, 2, [3, 4]];
+var arr1 = [1, 2, [3, 4]]
 
-var arr2 = [1, 2, [3, 4, [5, 6]]];
+var arr2 = [1, 2, [3, 4, [5, 6]]]
 
 
-function flatten(){
-    console.log(arr2)
-    return '100'
+function flatten() {
+  console.log(arr2)
+  return '100'
 }
 
 
@@ -19,23 +19,23 @@ function flatten(){
  */
 
 function flattenDeep(target) {
-    return target.reduce((accumulator, currentValue, currentIndex, originArray) => {
-        console.log(`accumulator =`)
-        console.log(accumulator)
-        console.log(`currentValue =`)
-        console.log(currentValue)
-        console.log(`currentIndex = ${currentIndex}`)
-        console.log(`originArray =`)
-        console.log(originArray)
-        console.log(`is it array? ${Array.isArray(currentValue)}`)
-        if (Array.isArray(currentValue)) {
-            return accumulator = accumulator.concat(flattenDeep(currentValue))
-        }
-        else {
-            return accumulator = accumulator.concat(currentValue)
-        }
+  return target.reduce((accumulator, currentValue, currentIndex, originArray) => {
+    console.log('accumulator =')
+    console.log(accumulator)
+    console.log('currentValue =')
+    console.log(currentValue)
+    console.log(`currentIndex = ${currentIndex}`)
+    console.log('originArray =')
+    console.log(originArray)
+    console.log(`is it array? ${Array.isArray(currentValue)}`)
+    if (Array.isArray(currentValue)) {
+      return accumulator = accumulator.concat(flattenDeep(currentValue))
+    }
+    else {
+      return accumulator = accumulator.concat(currentValue)
+    }
 
-    }, [])  
+  }, [])  
 
 }
 
