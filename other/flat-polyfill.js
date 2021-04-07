@@ -38,8 +38,8 @@ function flatten() {
 // }
 
 function flattenDeep(target) {
-    return target.reduce((accumulator, currentValue, currentIndex, originArray) => Array.isArray(currentValue) ? accumulator.concat(flattenDeep(currentValue)) : accumulator.concat(currentValue), [])
-  }
+  return target.reduce((accumulator, currentValue, currentIndex, originArray) => Array.isArray(currentValue) ? accumulator.concat(flattenDeep(currentValue)) : accumulator.concat(currentValue), [])
+}
 
 
 let result = flattenDeep(arr2)
