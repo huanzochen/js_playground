@@ -18,7 +18,7 @@
         "space-infix-ops": ["error"],
         "array-bracket-spacing": ["error", "never"],
         "lines-around-comment": ["error", { "beforeBlockComment": true }],
-        "indent": ["error", 2],
+        "indent": ["error", 4],
         "no-mixed-spaces-and-tabs": ["error", "smart-tabs"],
         "no-multi-spaces": ["error"],
         "block-spacing": ["error"],
@@ -28,7 +28,7 @@
         // 優先使用數組或對象解構 (prefer-destructuring)
         "prefer-destructuring": ["error", {"object": true, "array": true}, {"enforceForRenamedProperties": false}],
         // 建議使用擴展語法而非.apply()
-        "prefer-spread": ["error"],
+        "prefer-spread": ["info"],
         // 優先使用 spread operator 而不是 https://cn.eslint.org/docs/rules/prefer-object-spread
         "prefer-object-spread": ["error"],
         "object-property-newline": ["error"],
