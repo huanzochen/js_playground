@@ -21,8 +21,10 @@ let newRaven = {
         price:'1000'
     }
 }
+// 暫時寫不出 object.assign() 的版本, 看 babel 好像有點難 哭哭
 
-// 應該會是 false, 一個新物件
+
+// false, 一個新物件
 console.log(raven === newRaven)
 
 // true, 因為是 shallow copy
