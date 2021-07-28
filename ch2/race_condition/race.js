@@ -11,9 +11,11 @@ const waitFunction = async () => {
   console.log({ value })
 }
 
-const setFunction = () => {
+const setValueAddFunction = () => {
   value = 2
 }
 
+// 透過撰寫有 promise 的 setTimeout 便可實現 promise 的 timeout
 waitFunction()
-setFunction()
+
+setValueAddFunction()

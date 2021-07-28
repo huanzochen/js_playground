@@ -21,7 +21,7 @@ let newRaven = {
         price:'1000'
     }
 }
-// 暫時寫不出 object.assign() 的版本, 看 babel 好像有點難 哭哭
+// 暫時寫不出 object.assign() 的版本, 看 babel 好像有點難 哭哭 多層 spread operator
 
 
 // false, 一個新物件
