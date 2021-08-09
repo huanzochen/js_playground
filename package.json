@@ -5,12 +5,15 @@
   "main": "never_called_trust_issue.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "eslint:all": "eslint --ext .js --fix ./"
+    "eslint:all": "eslint --ext .js --fix ./",
+    "run": "node other/immutable/immer.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "axios": "^0.21.1",
-    "eslint": "^7.21.0"
-  }
+    "eslint": "^7.21.0",
+    "immer": "^9.0.3"
+  },
+  "type": "module"
 }
