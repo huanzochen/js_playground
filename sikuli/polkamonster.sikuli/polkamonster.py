@@ -16,8 +16,8 @@ while True:
             print('沒找到 Fight 按鈕')
 
             noFightCount += 1
-            print(nextCount)
-            if(nextCount % 2) == 0:
+            print(noFightCount)
+            if(noFightCount % 2) == 0:
                 type(Key.F5) 
                 wait(5)
             
@@ -32,8 +32,8 @@ while True:
                 print('沒找到 meta按鈕!')
 
                 noFightCount += 1
-                print(nextCount)
-                if(nextCount % 2) == 0:
+                print(noFightCount)
+                if(noFightCount % 2) == 0:
                     type(Key.F5) 
                     wait(5)
 
@@ -55,8 +55,8 @@ while True:
             print('沒找到下一個按鈕')
 
             noFightCount += 1
-            print(nextCount)
-            if(nextCount % 2) == 0:
+            print(noFightCount)
+            if(noFightCount % 2) == 0:
                 type(Key.F5) 
                 wait(5)
         else:
