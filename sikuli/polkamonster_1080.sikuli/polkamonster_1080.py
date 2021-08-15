@@ -24,7 +24,7 @@ while True:
         else:
             print('找到 Fight 開始打架!')
             isSixtyMonsterArea.highlight(2)
-            isSixtyMonsterArea.click("1629013141015.png")
+            sixtyMonsterArea.click(Pattern("1629013141015.png").similar(0.98))
             
             metaArea = Region(731,516,348,85)
             isMetaArea = metaArea.exists(Pattern("1629013168898.png").similar(0.98), 5)
@@ -40,7 +40,7 @@ while True:
             else:
                 print('找到meta, 點擊!')
                 isMetaArea.highlight(2)
-                isMetaArea.click("1629013168898.png")
+                metaArea.click(Pattern("1629013168898.png").similar(0.98))
                 wait(30)
                 type(Key.F5)
                 wait(5)
@@ -61,7 +61,7 @@ while True:
                 wait(5)
         else:
             print('切換到下一個!')
-            isNextArea.click("1629013326373.png")
+            nextArea.click(Pattern("1629013326373.png").similar(0.97))
             isNextArea.highlight(2)
             nextCount += 1
             print(nextCount)
