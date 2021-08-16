@@ -3,6 +3,7 @@ print "測試"
 
 nextCount = 0
 noFightCount = 0
+setThrowException(False)
 
 while True:
     timeArea = Region(58,786,394,65)
