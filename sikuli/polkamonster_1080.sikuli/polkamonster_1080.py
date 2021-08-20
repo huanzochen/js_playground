@@ -14,6 +14,7 @@ def reloadPage():
         reloadPage()
     else:
         print('載入網頁成功!')
+        isReloadArea.highlight(2)
         wait(5)
     
 
