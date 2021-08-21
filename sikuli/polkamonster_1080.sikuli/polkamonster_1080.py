@@ -8,14 +8,14 @@ setThrowException(False)
 def reloadPage():
     type(Key.F5)
     wait(10)
-    reloadArea = Region(10,469,757,618)
-    isReloadArea = reloadArea.exists(Pattern("1629421744929.png").similar(0.9), 30)
-    if isReloadArea is None:
+    detailArea = Region(1,384,524,662)
+    isDetailArea = detailArea.exists(Pattern("1629431236536.png").similar(0.7), 10)
+    if isDetailArea is None:
         print('沒有載入出網頁, 稍等重整')
         reloadPage()
     else:
         print('載入網頁成功!')
-        isReloadArea.highlight(2)
+        isDetailArea.highlight(2)
     
 
 while True:
