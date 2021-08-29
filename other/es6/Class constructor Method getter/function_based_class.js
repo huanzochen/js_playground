@@ -12,15 +12,17 @@ Animal.eat = function() {
 }
 
 const testAnimal = () => {
-    let cat = new Animal()
+    let cat = new Animal('cat', 'red')
     let speak = cat.speak
+    console.log(cat.speak())
     console.log(speak())
 
     let eat = Animal.eat
+    console.log(Animal.eat())
     console.log(eat())
 }
 
-// testAnimal()
+testAnimal()
 
 class Dog extends Animal {
     constructor(type, color, name) {

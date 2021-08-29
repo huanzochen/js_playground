@@ -91,9 +91,3 @@ console.log(d1.speak())
 
 
 
-
-// class Polygon {
-//     constructor()
-// }
-
-
