@@ -6,8 +6,8 @@ var arr2 = [1, 2, [3, 4, [5, 6]]]
 
 
 function flatten() {
-  console.log(arr2)
-  return '100'
+    console.log(arr2)
+    return '100'
 }
 
 
@@ -38,7 +38,7 @@ function flatten() {
 // }
 
 function flattenDeep(target) {
-  return target.reduce((accumulator, currentValue, currentIndex, originArray) => Array.isArray(currentValue) ? accumulator.concat(flattenDeep(currentValue)) : accumulator.concat(currentValue), [])
+    return target.reduce((accumulator, currentValue, currentIndex, originArray) => Array.isArray(currentValue) ? accumulator.concat(flattenDeep(currentValue)) : accumulator.concat(currentValue), [])
 }
 
 

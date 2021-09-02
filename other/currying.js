@@ -1,6 +1,6 @@
 function multiply(num1) {
     console.log(num1)
-	return function multyply2(num2) {
+    return function multyply2(num2) {
         return num1 * num2	
     }
 }

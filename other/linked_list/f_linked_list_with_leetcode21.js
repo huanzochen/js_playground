@@ -25,7 +25,7 @@ l2_2.next = l2_3
 var mergeTwoList = function(l1, l2) {
     console.log(l1)
     let newList = new ListNode(0)
-    let headList = newList\
+    let headList = newList
     while (l1 != null && l2 != null) {
         if (l1.val < l2.val) {
             newList.next = l1

@@ -11,18 +11,18 @@
 
 let value = 1
 const waitFunction = async () => {
-  console.log(`現在 value= ${ value }`)
-  const promise = new Promise((resolve) => {
-    setTimeout(() => {
-      resolve()
-    }, 1000)
-  })
-  await promise
-  console.log(`現在 value= ${ value }`)
+    console.log(`現在 value= ${ value }`)
+    const promise = new Promise((resolve) => {
+        setTimeout(() => {
+            resolve()
+        }, 1000)
+    })
+    await promise
+    console.log(`現在 value= ${ value }`)
 }
 
 const setValueAddFunction = () => {
-  value = 2
+    value = 2
 }
 
 // 透過撰寫有 promise 的 setTimeout 便可實現 promise 的 timeout

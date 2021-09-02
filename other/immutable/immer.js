@@ -1,4 +1,4 @@
-import { produce } from "immer";
+import { produce } from 'immer'
 
 let raven = {
     type: 'hero',
@@ -17,7 +17,7 @@ let raven = {
 }
 
 const nextRaven = produce(raven, draftRaven => {
-    draftRaven.skills.q  = 'QQ'
+    draftRaven.skills.q = 'QQ'
 })
 
 // false 因為 immer 的關係 nextRaven 會變成一個新 object

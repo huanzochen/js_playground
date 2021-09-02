@@ -1,22 +1,22 @@
 
 
 var aaa = function() {
-  console.log('aaa function expression')
-  for (var i = 0;i < 5; i++) {
-    setTimeout(function() {
-      console.log(i)
-    }, 1)
-  }
-  // 會顯示的答案為
+    console.log('aaa function expression')
+    for (var i = 0;i < 5; i++) {
+        setTimeout(function() {
+            console.log(i)
+        }, 1)
+    }
+    // 會顯示的答案為
 }
 
 var bbb = function bbbFunc() {
-  console.log('bbb function expression')
-  for (let i = 0; i < 5;i++) {
-    setTimeout(function() {
-      console.log(i)
-    }, 500)
-  }
+    console.log('bbb function expression')
+    for (let i = 0; i < 5;i++) {
+        setTimeout(function() {
+            console.log(i)
+        }, 500)
+    }
 }
 
 
@@ -37,12 +37,12 @@ console.log(typeof bbbFunc)
 console.log(bbb === ccc)
 
 function bb() {
-  console.log('bbb function expression')
-  for (let i = 0; i < 5;i++) {
-    setTimeout(function() {
-      console.log(i)
-    }, 500)
-  }
+    console.log('bbb function expression')
+    for (let i = 0; i < 5;i++) {
+        setTimeout(function() {
+            console.log(i)
+        }, 500)
+    }
 }
 var cc = bb
 console.log(bb.name)

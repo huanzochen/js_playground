@@ -28,4 +28,4 @@ console.log(person)
 console.log(newPerson)
 
 // the
-console.log('Are they the same?', person === newPerson); // false 
+console.log('Are they the same?', person === newPerson) // false 
