@@ -31,7 +31,7 @@ console.log(tommy2)
 
 
 let kevin = city
-// 直接繼承整個物件的話就不會有上述問題
+// 直接繼承整個物件的話就不會有上述沒有 city中變數的問題
 // 因為同時也繼承了this 中的所有值
 console.log(kevin.getCity())
 

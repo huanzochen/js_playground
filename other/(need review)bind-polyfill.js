@@ -20,5 +20,6 @@ function bind(t, callback) {
     }
 }
 
+// 這個 bind 實作注重在合併數值, 但沒有 this 的傳承, 之後再研究 t 是否有用
 var addWithBind = bind(null, add, 2, 5)
 console.log(addWithBind(8, 4, 3, 2))	
