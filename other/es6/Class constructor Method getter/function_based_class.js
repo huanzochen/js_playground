@@ -39,4 +39,25 @@ let d1 = new Dog('dog', 'black', 'poopoo')
 console.log(d1.speak())
 
 
+////////////////////////////////////////////////
+
+let obj = {
+    'name': 'tommy',
+    'gender': 'male',
+
+    info: function() {
+        return `this guy is ${this.name}, is a ${this.gender}`
+    }
+}
+console.log(obj.info())
+
+
+var name = 'kevin'
+var gender = 'female'
+let newInfo = obj.info
+// console.log(newInfo()) // Cannot read property 'name' of undefined in 'use strict'
+
+obj.info = obj.info.bind(obj) // Explicit Hard Binding
+let newInfo2 = obj.info
+console.log(newInfo2())
 
