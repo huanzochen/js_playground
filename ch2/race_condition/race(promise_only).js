@@ -2,7 +2,7 @@
 
 let value = 1
 const waitFunction = () => {
-    console.log(`現在 value= ${ value }`)
+    console.log(`現在 value= ${value}`)
     const promise = new Promise(resolve => {
         setTimeout(() => {
             resolve()
@@ -10,7 +10,8 @@ const waitFunction = () => {
     })
 
     promise.then(() => {
-        console.log(`現在 value= ${ value }`)
+        // 1 一秒後會顯示 2
+        console.log(`現在 value= ${value}`)
     })
 }
 
