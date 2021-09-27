@@ -34,12 +34,14 @@
 
 
 
-function delay(j, donext) {
-}
-for (var i = 0; i < 6; i++) {
-    let j = i
+// 待解的題目, 不用 await 的情況下寫出 promise 的語句
+// function delay(j, donext) {
 
-}
+// }
+// for (var i = 0; i < 6; i++) {
+//     let j = i
+//     console.log(j)
+// }
 
 
 // 如果要設計一個 function, 會在1秒後印出對應秒數的值.
