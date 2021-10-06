@@ -11,27 +11,37 @@
 // }
 // loop()
 
-// function timeout(j) {
-//     return new Promise(function (resolve, reject) {
-//         setTimeout(function () {
-//             console.log(j)
-//             resolve()
-//         }, 1000)
-//     })
-// }
+function timeout(j) {
+    return new Promise(function (resolve, reject) {
+        setTimeout(function () {
+            console.log(j)
+            resolve()
+        }, 1000)
+    })
+}
 
 
 // 不好的解法
-// timeout(1).then(() => {
-//     timeout(2).then(() => {
-//         timeout(3).then(() => {
-//             timeout(4).then(() => {
-//                 timeout(5)
-//             })
-//         })
-//     })
-// })
+timeout(1).then(() => {
+    timeout(2).then(() => {
+        timeout(3).then(() => {
+            timeout(4).then(() => {
+                timeout(5)
+            })
+        })
+    })
+})
 
+// 另外一種寫法, 透過這樣的方式徹底發揮了 promise 的精隨.
+timeout(1).then(() => {
+    return timeout(2)
+}).then(() => {
+    return timeout(3)
+}).then(() => {
+    return timeout(4)
+}).then(() => {
+    return timeout(5)
+})
 
 
 // 待解的題目, 不用 await 的情況下寫出 promise 的語句
