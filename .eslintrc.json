@@ -14,7 +14,6 @@
         "space-before-blocks": ["error", "always"],
         "arrow-spacing": "error",
         "keyword-spacing": "error",
-        "brace-style": ["error", "stroustrup", { "allowSingleLine": true }],
         "space-infix-ops": ["error"],
         "array-bracket-spacing": ["error", "never"],
         "lines-around-comment": ["error", { "beforeBlockComment": true }],
@@ -32,6 +31,7 @@
         // 優先使用 spread operator 而不是 https://cn.eslint.org/docs/rules/prefer-object-spread
         "prefer-object-spread": ["error"],
         "object-property-newline": ["error"],
-        "object-curly-spacing": ["error", "always"]
+        "object-curly-spacing": ["error", "always"],
+        "no-multiple-empty-lines": ["error", { "max": 1 }] // Add this rule to enforce no multiple empty lines
     }
 }
