@@ -3,7 +3,7 @@
     "source.fixAll.eslint": "explicit"
   },
   "[javascript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.defaultFormatter": "vscode.typescript-language-features",
     "editor.formatOnSave": false
   },
   "[javascriptreact]": {
