@@ -12,21 +12,21 @@ const insertNum = 111
 
 const insertion = (num, array) => {
 
-    const temp = num
-    let j = array.length - 1
+  const temp = num
+  let j = array.length - 1
 
-    while (true) {
-        if (j < 0) break
-        if (!(j >= 0 && array[j] > temp)) break
+  while (true) {
+    if (j < 0) break
+    if (!(j >= 0 && array[j] > temp)) break
 
-        array[j + 1] = array[j]
-        j = j - 1
+    array[j + 1] = array[j]
+    j = j - 1
 
-        console.log(`Array is now looks like: ${array}`)
-    }
+    console.log(`Array is now looks like: ${array}`)
+  }
 
-    array[j + 1] = temp
-    return array
+  array[j + 1] = temp
+  return array
 }
 
 const result = insertion(insertNum, sortedArray)

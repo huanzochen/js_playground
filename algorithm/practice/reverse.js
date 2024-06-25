@@ -2,31 +2,27 @@
 const sortedArray = [3, 4, 20, 49, 58, 99, 100, 201, 222]
 
 const reverse = (array) => {
-    let pMax = array.length - 1
-    let pMin = 0
-    let temp = 0
+  let pMax = array.length - 1
+  let pMin = 0
+  let temp = 0
 
-    // temp = sortedArray[pMax]
-    // sortedArray[pMax] = sortedArray[pMin]
-    // sortedArray[pMin] = temp
+  // temp = sortedArray[pMax]
+  // sortedArray[pMax] = sortedArray[pMin]
+  // sortedArray[pMin] = temp
 
-    while (pMax > (array.length - 1) / 2) {
-        temp = sortedArray[pMax]
-        sortedArray[pMax] = sortedArray[pMin]
-        sortedArray[pMin] = temp
-        pMax = pMax - 1
-        pMin = pMin + 1
-    }
+  while (pMax > (array.length - 1) / 2) {
+    temp = sortedArray[pMax]
+    sortedArray[pMax] = sortedArray[pMin]
+    sortedArray[pMin] = temp
+    pMax = pMax - 1
+    pMin = pMin + 1
+  }
 
-    return sortedArray
+  return sortedArray
 }
-
 
 const result = reverse(sortedArray)
 console.log('result:', result)
-
-
-
 
 /*** Below is refs ***/
 
