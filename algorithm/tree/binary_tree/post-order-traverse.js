@@ -44,18 +44,33 @@ const breakDown = (node) => {
 
 console.log(breakDown(tree))
 
+// const breakDownDebug = (node) => {
+//   // base case 
+//   if (node === null) return []
+
+//   const left = breakDownDebug(node.left)
+//   console.log(node.val, 'left:', left)
+//   const right = breakDownDebug(node.right)
+//   console.log(node.val, 'right:', right)
+//   const current = node.val
+//   console.log(node.val, 'current:', current)
+
+//   return [...left, ...right, current]
+// }
+
+// breakDownDebug(tree)
+
 const breakDownVariant = (node) => {
   // base case 
   if (node === null) return []
 
-  const left = breakDownVariant(node.left)
-  console.log(node.val, 'left:', left)
-  const right = breakDownVariant(node.right)
-  console.log(node.val, 'right:', right)
-  const current = node.val
-  console.log(node.val, 'current:', current)
+  let res = []
 
-  return [...left, ...right, current]
+  res = res.concat(breakDownVariant(node.left))
+  res = res.concat(breakDownVariant(node.right))
+  res.push(node.val)
+
+  return res
 }
 
-breakDownVariant(tree)
+console.log(breakDownVariant(tree))
