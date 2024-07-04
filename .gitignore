@@ -1,6 +1,9 @@
 # modules
 node_modules
 
-# dependencies files 
+# dependencies files
 package-lock.json
 yarn-error.log
+
+# Code runner extension ignore
+tempCodeRunnerFile.js
