@@ -50,10 +50,22 @@ var reverseList = function (head) {
   return reverseN(head, 3)
 }
 
-const test = new ListNode(1)
-test.next = new ListNode(2)
-test.next.next = new ListNode(3)
-test.next.next.next = new ListNode(4)
-test.next.next.next.next = new ListNode(5)
+const q1 = new ListNode(1)
+q1.next = new ListNode(2)
+q1.next.next = new ListNode(3)
+q1.next.next.next = new ListNode(4)
+q1.next.next.next.next = new ListNode(5)
 
+const test = q1
 console.log(reverseList(test).toArray())
+
+const q2 = new ListNode(1)
+q2.next = new ListNode(2)
+q2.next.next = new ListNode(3)
+q2.next.next.next = new ListNode(4)
+q2.next.next.next.next = new ListNode(5)
+
+const testCase = (func, result) => {
+  console.log(JSON.stringify(func.toArray()) === JSON.stringify(result))
+}
+testCase(reverseList(q2), [3, 2, 1, 4, 5])

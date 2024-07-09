@@ -27,24 +27,45 @@ class ListNode {
  * @return {ListNode}
  */
 var reverseList = function (head) {
-
-  let prev = null
+  let nodeConcatAtEnd = null
 
   const reverseN = (head, n) => {
-    // base case, when the recursive will return
-    if (n === 1) {
+    // base case
+    if (n == 1) {
+      // if the head is [1,2,3,4,5], then n === 1 should be 3
+      // console.log('head.val:', head.val)
+
+      nodeConcatAtEnd = head.next
       return head
     }
+    const last = reverseN(head.next, n - 1)
+    head.next.next = head
+    head.next = nodeConcatAtEnd
 
+    return last
   }
 
   return reverseN(head, 3)
 }
 
-const test = new ListNode(1)
-test.next = new ListNode(2)
-test.next.next = new ListNode(3)
-test.next.next.next = new ListNode(4)
-test.next.next.next.next = new ListNode(5)
+const q1 = new ListNode(1)
+q1.next = new ListNode(2)
+q1.next.next = new ListNode(3)
+q1.next.next.next = new ListNode(4)
+q1.next.next.next.next = new ListNode(5)
 
-console.log(reverseList(test).toArray())
+const test = q1
+const result = reverseList(test)
+console.log(result.toArray())
+
+
+// const q2 = new ListNode(1)
+// q2.next = new ListNode(2)
+// q2.next.next = new ListNode(3)
+// q2.next.next.next = new ListNode(4)
+// q2.next.next.next.next = new ListNode(5)
+
+// const testCase = (func, result) => {
+//   console.log(JSON.stringify(func.toArray()) === JSON.stringify(result))
+// }
+// testCase(reverseList(q2), [3, 2, 1, 4, 5])
